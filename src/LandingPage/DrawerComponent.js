@@ -18,10 +18,6 @@ export default function DrawerComponent() {
 
   const navigate = useNavigate();
 
-  const handleNavigate = (component) => {
-    return component;
-  };
-
   return (
     <div>
       <Tabs paddingLeft={"2rem"} paddingTop={"1rem"}>
@@ -80,7 +76,7 @@ export default function DrawerComponent() {
                 }}
               >
                 Concerts
-              </Button>{" "}
+              </Button>
             </DrawerBody>
           </DrawerHeader>
           <DrawerHeader>
@@ -93,10 +89,10 @@ export default function DrawerComponent() {
                 }}
               >
                 Media
-              </Button>{" "}
+              </Button>
             </DrawerBody>
           </DrawerHeader>
-        </DrawerContent>{" "}
+        </DrawerContent>
       </Drawer>
     </div>
   );

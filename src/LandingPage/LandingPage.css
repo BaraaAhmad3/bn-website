@@ -1,0 +1,20 @@
+/* App.css */
+.app-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px; /* Adjust as needed */
+  }
+
+.body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+  background-image: url('/public/band-pic.JPG'); /* Set your custom image as the background */
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  height: 100vh; /* Ensure the body covers the entire viewport height */
+
+}
+
+  

@@ -1,0 +1,63 @@
+/* styles.css */
+.social-media-icons {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 20px;
+    padding-top:1rem
+  }
+  
+  .social-media-icons a {
+    position: relative;
+    margin-left: 10px;
+    color: white;
+    text-decoration: none; /* Remove underlines for links */
+  }
+  
+  .social-media-icons a:hover::after {
+    content: attr(title);
+    position: absolute;
+    background: rgba(255, 255, 255, 0.8);
+    color: #000;
+    padding: 5px;
+    border-radius: 5px;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    white-space: nowrap;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  
+  .social-media-icons a:hover::after {
+    opacity: 1;
+  }
+
+  .instagram-icon {
+    background: linear-gradient(to right, #fd5d94, #fcb045, #fc7e5e, #ff57b0, #d6419b);
+    display: inline-block;
+    margin: 0; /* Remove any default margin */
+    padding: 1px; /* Remove any default padding */
+    width: 28px; /* Adjust as needed */
+    height: 29.5px; /* Adjust as needed */
+    border-radius: 45%; /* Add rounded corners */
+    overflow: hidden; /* Hide any overflowing content */
+  }
+  .instagram-icon svg {
+    height:105%; /* Make the SVG fill the container vertically */
+    width: auto; /* Maintain the SVG's aspect ratio */  }
+
+    .facebook-icon {
+        display: inline-block;
+        margin:0;
+        width: 30px; /* Adjust as needed */
+        height: 30px; /* Adjust as needed */
+        border-radius: 100%; /* Add rounded corners */
+        overflow: hidden; /* Hide any overflowing content */
+        background: 
+        
+        (#fff, #fff, #fff); /* Facebook colors */
+      }
+      
+      .facebook-icon svg {
+        height:100%; /* Make the SVG fill the container vertically */
+        width: auto; /* Maintain the SVG's aspect ratio */  }
