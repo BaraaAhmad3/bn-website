@@ -4,17 +4,22 @@
     justify-content: space-between;
     padding: 10px; /* Adjust as needed */
   }
-
 .body {
   margin: 0;
   padding: 0;
   font-family: 'Arial', sans-serif;
-  background-image: url('/public/band-pic.JPG'); /* Set your custom image as the background */
+  background-image: url('/public/Capture.PNG'); /* Set your custom image path */
   background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat;
+  background-position: center center ;
   height: 100vh; /* Ensure the body covers the entire viewport height */
 
+  /* Additional styles for smaller screens (adjust as needed) */
+  @media only screen and (max-width: 100px) {
+    background-size: 1%;
+    background-size: cover; /* Adjust the background size for smaller screens */
+    height: 100vh; /* Allow the body to adjust its height based on content */
+  }
 }
+
 
   

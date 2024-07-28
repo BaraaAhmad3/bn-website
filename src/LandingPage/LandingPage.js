@@ -21,22 +21,30 @@ export default function LandingPage() {
 
   return (
     <div className="body">
-      <div>
-        <div className="app-container">
-          <DrawerComponent></DrawerComponent> <Tooltips></Tooltips>
-        </div>
-        <VStack>
-          <Container>
-            <Center>
-              <Heading color={"white"} as={"h4"} size={"3xl"}>
-                The Burn Notice
-              </Heading>
-            </Center>
-          </Container>
+      <div className="app-container">
+        <DrawerComponent />
+        <Tooltips />
+      </div>
+      <VStack>
+        <Center>
+          <Heading
+            color="white"
+            as="h4"
+            size="2xl"
+            fontFamily="sans-serif"
+            textShadow="2px 2px 4px rgba(0, 0, 0, 0.5)"
+            fontWeight="bold"
+            letterSpacing="wide"
+            textTransform="uppercase"
+            style={{ display: "inline-block", whiteSpace: "nowrap" }}
+          >
+            The Burn Notice
+          </Heading>
+        </Center>
+        <Center>
           <Flex
-            w={"50%"}
-            direction={"column"}
-            align={"center"}
+            direction={{ base: "column", md: "column", lg: "row" }}
+            align={{ base: "center", md: "center", lg: "center" }}
             paddingTop={"2rem"}
           >
             <Button
@@ -59,7 +67,7 @@ export default function LandingPage() {
                 direction="column"
                 align="center"
                 justify="center"
-                height={"20vh"} // Adjust the height as needed
+                height={{ base: "auto", md: "auto", lg: "20vh" }}
               >
                 <Text
                   onClick={handleButtonClick}
@@ -84,8 +92,8 @@ export default function LandingPage() {
               </Flex>
             )}
           </Flex>
-        </VStack>
-      </div>
+        </Center>
+      </VStack>
     </div>
   );
 }

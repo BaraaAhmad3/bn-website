@@ -15,9 +15,13 @@ const SocialMediaIcons = () => {
         target="_blank"
         rel="noopener noreferrer"
         title="Instagram"
-        className="instagram-icon"
       >
-        <FontAwesomeIcon icon={faInstagram} size="2x" color="white" />
+        <FontAwesomeIcon
+          icon={faInstagram}
+          size="2x"
+          color="pink
+        "
+        />
       </a>
 
       <a
